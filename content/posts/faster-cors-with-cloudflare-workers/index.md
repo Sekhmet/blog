@@ -1,7 +1,8 @@
 +++
 date = '2025-03-06T13:32:19+01:00'
 draft = false
-title = 'Speeding up CORS preflight requests with Cloudflare Workers for APIs'
+title = 'Speeding up CORS preflight requests with Cloudflare Workers'
+description = 'Using Cloudflare Workers to handle all CORS preflight requests to make them as fast as possible.'
 +++
 
 As a security measure browsers perform [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
