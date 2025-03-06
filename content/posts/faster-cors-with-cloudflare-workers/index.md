@@ -139,7 +139,7 @@ and are served by worker you will get good response times for those requests reg
 where you access it from as they run on Cloudflare's edge network.
 
 Before:
-![Preflight response times without worker](./direct.png)
+![Preflight response times without worker](direct.png)
 
 After:
-![Preflight response times with worker](./worker.png)
+![Preflight response times with worker](worker.png)
