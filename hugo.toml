@@ -1,0 +1,8 @@
+baseURL = 'https://sekhmet.pl/'
+languageCode = 'en-us'
+title = 'Sekhmet'
+theme = 'hyde'
+
+[params]
+  themeColor = "theme-base-0d"
+  description = "Just stuff"
