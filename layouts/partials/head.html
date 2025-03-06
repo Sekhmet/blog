@@ -16,10 +16,15 @@
   <meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}" />
 
   <!-- CSS -->
-  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/print.css" media="print">
-  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/poole.css">
-  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/syntax.css">
-  <link type="text/css" rel="stylesheet" href="{{ .Site.BaseURL }}css/hyde.css">
+  {{ $stylePrint := resources.Get "css/print.css" | fingerprint "sha512" }}
+  {{ $styleSyntax := resources.Get "css/syntax.css" | fingerprint "sha512" }}
+  {{ $stylePoole := resources.Get "css/poole.css" | fingerprint "sha512" }}
+  {{ $styleHugo := resources.Get "css/hyde.css" | fingerprint "sha512" }}
+  
+  <link type="text/css" rel="stylesheet" href="{{ $stylePrint.RelPermalink }}" integrity="{{ $stylePrint.Data.Integrity }}" media="print">
+  <link type="text/css" rel="stylesheet" href="{{ $stylePoole.RelPermalink }}" integrity="{{ $stylePoole.Data.Integrity }}">
+  <link type="text/css" rel="stylesheet" href="{{ $styleSyntax.RelPermalink }}" integrity="{{ $styleSyntax.Data.Integrity }}">
+  <link type="text/css" rel="stylesheet" href="{{ $styleHugo.RelPermalink }}" integrity="{{ $styleHugo.Data.Integrity }}">
   {{ partial "head_fonts.html" . }}
 
   <!-- Icons -->
