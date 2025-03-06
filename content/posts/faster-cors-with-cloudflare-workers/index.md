@@ -1,6 +1,6 @@
 +++
 date = '2025-03-06T13:32:19+01:00'
-draft = true
+draft = false
 title = 'Speeding up CORS preflight requests with Cloudflare Workers for APIs'
 +++
 
