@@ -4,5 +4,5 @@ title = 'Sekhmet'
 theme = 'hyde'
 
 [params]
-  themeColor = "theme-base-0d"
+  themeColor = "theme-base-sekhmet"
   description = "Just stuff"
