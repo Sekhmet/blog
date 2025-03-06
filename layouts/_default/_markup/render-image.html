@@ -35,7 +35,7 @@
 				{{- end -}}
 			{{- end -}}
 		{{- end -}}" sizes="{{ $dataSzes }}" />
-		<img src="{{ $actualImg.RelPermalink }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" />
+		<img src="{{ $actualImg.RelPermalink }}" width="{{ $src.Width }}" alt="{{ $alt }}" title="{{ $alt }}" loading="lazy" />
 	</picture>
 </div>
 {{- with $caption -}}<p class="imghCaption">{{ $caption | $.Page.RenderString }}</p>{{- end }}
