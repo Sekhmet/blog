@@ -107,7 +107,8 @@ In Cloudflare dashboard for you domain:
 
 1. Go to **Rules**.
 2. Click **Create rule**.
-3. Use following rule details:
+3. Select **URL Rewrite Rule**.
+4. Use following rule details:
    1. **Rule name**: Rewrite OPTIONS request to /cors-proxy
    2. **If incoming requests match…**: Custom filter expression
    3. Use two fields with AND operator:
@@ -116,7 +117,7 @@ In Cloudflare dashboard for you domain:
    4. **Then...**:
       1. Path - rewrite to - static - `/cors-proxy`
       2. Query - preserve
-4. Click **Save**.
+5. Click **Save**.
 
 With this change all `OPTIONS` requests will be forwarded to `api.example.com/cors-proxy`.
 This isn't really useful on itself, but with this rule we can now connect our worker
