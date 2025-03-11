@@ -127,7 +127,7 @@ to this path.
 
 Again, in Cloudflare dashboard for your domain:
 
-1. Go to **Worker Route**.
+1. Go to **Workers Routes**.
 2. Click **Add route**.
 3. Fill it in as:
    - **Route**: `api.example.com/cors-proxy`
