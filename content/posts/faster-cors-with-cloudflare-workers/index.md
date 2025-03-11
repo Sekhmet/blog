@@ -73,6 +73,8 @@ This is simplest version that just returns `Access-Control-Allow-Origin` header.
 ```js
 const corsHeaders = {
   "Access-Control-Allow-Origin": "*",
+  "Access-Control-Allow-Methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  "Access-Control-Allow-Headers": "*",
 };
 
 export default {
