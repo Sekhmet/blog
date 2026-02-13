@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'Sekhmet'
 theme = 'hyde'
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [params]
   themeColor = "theme-base-sekhmet"
   description = "Just stuff"
